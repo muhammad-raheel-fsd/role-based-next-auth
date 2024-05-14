@@ -3,7 +3,7 @@ import { authOptions } from "./api/auth/[...nextauth]/options";
 
 const Home = async () => {
   const user = await getServerSession(authOptions);
-  // console.log("USER ===== ", user);
+  console.log("USER ===== ", user);
   return (
     <main>
       <h1 className="text-center text-2xl my-5">
